@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Our Services",
+    "about": "About Us",
+    "contact": "Contact",
+    "requestQuote": "Request a Quote"
+  },
+  "hero": {
+    "title": "Automation Leader in Morocco",
+    "subtitle": "High-Performance Security & Prestige Automation",
+    "description": "Hero Metal Maroc designs, installs, and maintains your automated accesses and smart security systems. Industrial excellence at the service of your villa or business.",
+    "badges": {
+      "active": "SYSTEM ACTIVE",
+      "secure": "SECURE BY HERO METAL"
+    },
+    "buttons": {
+      "quote": "Free Quote",
+      "discover": "Discover Our Solutions"
+    }
+  },
+  "services": {
+    "title": "Our Security & Automation Solutions",
+    "subtext": "Bespoke installations combining industrial robustness and contemporary design.",
+    "items": {
+      "garage": {
+        "title": "Sectional Garage Doors",
+        "desc": "Elegant insulated doors that open vertically for maximum space-saving and absolute security."
+      },
+      "gate": {
+        "title": "Gate Automation",
+        "desc": "Premium motorization for sliding or swing gates with remote control and smart integration."
+      },
+      "barriers": {
+        "title": "Vehicle Access Barriers",
+        "desc": "Robust automatic rising barriers with LED strips for secure residences and professional parking lots."
+      },
+      "cctv": {
+        "title": "Video Surveillance & Alarm",
+        "desc": "High-definition cameras and smart domes with night vision and remote control via smartphone."
+      },
+      "access": {
+        "title": "Access Control",
+        "desc": "Biometric readers, RFID badges, and keypad locks to secure and filter access to your premises."
+      },
+      "locks": {
+        "title": "Smart Locks",
+        "desc": "High-security biometric smart locks for villa entrance doors and corporate offices."
+      }
+    },
+    "quoteBtn": "Request a free quote"
+  },
+  "about": {
+    "title": "Industrial Excellence in Morocco",
+    "subtitle": "Who We Are",
+    "description": "Since our establishment in Morocco, Hero Metal Maroc has become the gold standard for installing automatic gates, garage doors, and advanced electronic security systems. We partner with leading global brands to offer our clients (prestigious villas, gated communities, and enterprises) absolute reliability, tailored to the Moroccan climate and market requirements.",
+    "stats": {
+      "years": "Years of Experience",
+      "projects": "Completed Projects",
+      "clients": "Satisfied Clients",
+      "support": "Support & Maintenance"
+    }
+  },
+  "contact": {
+    "title": "Contact Our Experts",
+    "subtitle": "Have a project in mind? Our advisors are ready to study your needs anywhere in Morocco.",
+    "info": {
+      "city": "Casablanca, Maroc",
+      "address": "Angle Boulevard Ghandi & Route d'El Jadida, Casablanca, Morocco",
+      "email": "contact@herometal.ma",
+      "phone": "+212 522 00 00 00"
+    },
+    "form": {
+      "title": "Send us a Message",
+      "name": "Full Name",
+      "phone": "Phone Number",
+      "city": "City",
+      "cityPlaceholder": "Select your city",
+      "service": "Service of Interest",
+      "servicePlaceholder": "Select a service",
+      "details": "Project Details",
+      "submit": "Submit Request"
+    }
+  },
+  "footer": {
+    "description": "Your trusted partner for high-end security and automation in Morocco. From study to installation and maintenance.",
+    "solutionsTitle": "Our Solutions",
+    "companyTitle": "Company",
+    "contactTitle": "Contact Us",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "rights": "All rights reserved."
+  },
+  "request": {
+    "title": "Request A Quote",
+    "subtitle": "Tell us about your project and we'll provide a customized solution and estimate.",
+    "successTitle": "Request Sent Successfully!",
+    "successMessage": "Thank you for reaching out. Our experts will review your details and contact you shortly.",
+    "submitAnother": "Submit Another Request",
+    "form": {
+      "fullName": "Full Name *",
+      "company": "Company Name",
+      "email": "Email Address *",
+      "phone": "Phone Number *",
+      "serviceType": "Service Type *",
+      "serviceSelect": "Select a service...",
+      "projectType": "Project Type *",
+      "projectSelect": "Select type...",
+      "budget": "Budget Range",
+      "budgetSelect": "Select budget...",
+      "timeline": "Timeline",
+      "timelineSelect": "Select timeline...",
+      "description": "Project Description",
+      "descriptionPlaceholder": "Tell us more about your requirements...",
+      "submit": "Send Request",
+      "services": {
+        "garage": "Garage Doors",
+        "gate": "Gate Automation",
+        "barrier": "Vehicle Barriers",
+        "cctv": "CCTV & Alarm",
+        "access": "Access Control",
+        "locks": "Smart Locks"
+      },
+      "projects": {
+        "residential": "Residential (Villa)",
+        "commercial": "Commercial (Office/Store)",
+        "industrial": "Industrial"
+      },
+      "budgets": {
+        "under5k": "Under 5,000 MAD",
+        "5k_20k": "5,000 - 20,000 MAD",
+        "20k_50k": "20,000 - 50,000 MAD",
+        "over50k": "Over 50,000 MAD"
+      },
+      "timelines": {
+        "immediate": "Immediate",
+        "1month": "Within 1 month",
+        "3months": "1-3 months",
+        "planning": "Just planning"
+      }
+    }
+  }
+}

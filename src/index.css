@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Outfit", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-arabic: "Cairo", ui-sans-serif, system-ui, sans-serif;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-main: #ffffff;
+    --bg-secondary: #f8fafc; /* slate-50 */
+    --text-main: #0f172a; /* slate-900 */
+    --text-muted: #475569; /* slate-600 */
+    --border-color: #e2e8f0; /* slate-200 */
+    --accent: #0284c7; /* sky-600 */
+    --accent-hover: #0369a1; /* sky-700 */
+    --nav-bg: rgba(255, 255, 255, 0.9);
+  }
+
+  html.dark {
+    --bg-main: #020617; /* slate-950 */
+    --bg-secondary: #0f172a; /* slate-900 */
+    --text-main: #f8fafc; /* slate-50 */
+    --text-muted: #94a3b8; /* slate-400 */
+    --border-color: #1e293b; /* slate-800 */
+    --accent: #38bdf8; /* sky-400 */
+    --accent-hover: #7dd3fc; /* sky-300 */
+    --nav-bg: rgba(2, 6, 23, 0.9);
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    @apply font-sans antialiased min-h-screen transition-colors duration-300;
+  }
+
+  html[dir="rtl"] body {
+    font-family: var(--font-arabic);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+@layer utilities {
+  .glass {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Nos Services",
+    "about": "À Propos",
+    "contact": "Contactez-nous",
+    "requestQuote": "Demander un Devis"
+  },
+  "hero": {
+    "title": "Leader de l'Automatisation au Maroc",
+    "subtitle": "Sécurité Haute Performance & Automatisation de Prestige",
+    "description": "Hero Metal Maroc conçoit, installe et maintient vos accès automatisés et systèmes de sécurité intelligents. L'excellence industrielle au service de votre villa ou entreprise.",
+    "badges": {
+      "active": "SYSTÈME ACTIF",
+      "secure": "SÉCURISÉ PAR HERO METAL"
+    },
+    "buttons": {
+      "quote": "Devis Gratuit",
+      "discover": "Découvrir Nos Solutions"
+    }
+  },
+  "services": {
+    "title": "Nos Solutions de Sécurité & Automatisation",
+    "subtext": "Des installations sur mesure alliant robustesse industrielle et design contemporain.",
+    "items": {
+      "garage": {
+        "title": "Portes de Garage Sectionnelles",
+        "desc": "Portes isolées élégantes à ouverture verticale pour un gain de place maximal et une sécurité absolue."
+      },
+      "gate": {
+        "title": "Automatisation de Portail",
+        "desc": "Motorisation premium pour portails coulissants ou battants avec contrôle à distance et intégration intelligente."
+      },
+      "barriers": {
+        "title": "Barrières d'Accès pour Véhicules",
+        "desc": "Barrières levantes automatiques robustes avec bandeaux LED pour résidences sécurisées et parkings professionnels."
+      },
+      "cctv": {
+        "title": "Vidéosurveillance & Alarme",
+        "desc": "Caméras haute définition et dômes intelligents avec vision nocturne et contrôle à distance via smartphone."
+      },
+      "access": {
+        "title": "Contrôle d'Accès",
+        "desc": "Lecteurs biométriques, badges RFID et serrures à clavier pour sécuriser et filtrer l'accès à vos locaux."
+      },
+      "locks": {
+        "title": "Serrures Intelligentes",
+        "desc": "Serrures intelligentes biométriques haute sécurité pour portes d'entrée de villas et bureaux d'entreprise."
+      }
+    },
+    "quoteBtn": "Demander un devis gratuit"
+  },
+  "about": {
+    "title": "L'Excellence Industrielle au Maroc",
+    "subtitle": "Qui Sommes-Nous",
+    "description": "Depuis notre création au Maroc, Hero Metal Maroc est devenu la référence en matière d'installation de portails automatiques, portes de garage et systèmes avancés de sécurité électronique. Nous nous associons aux plus grandes marques mondiales pour offrir à nos clients (villas de prestige, résidences fermées et entreprises) une fiabilité absolue, adaptée au climat marocain et aux exigences du marché.",
+    "stats": {
+      "years": "Années d'Expérience",
+      "projects": "Projets Réalisés",
+      "clients": "Clients Satisfaits",
+      "support": "Support & Maintenance"
+    }
+  },
+  "contact": {
+    "title": "Contactez Nos Experts",
+    "subtitle": "Vous avez un projet en tête ? Nos conseillers sont prêts à étudier vos besoins partout au Maroc.",
+    "info": {
+      "city": "Casablanca, Maroc",
+      "address": "Angle Boulevard Ghandi & Route d'El Jadida, Casablanca, Maroc",
+      "email": "contact@herometal.ma",
+      "phone": "+212 522 00 00 00"
+    },
+    "form": {
+      "title": "Envoyez-nous un Message",
+      "name": "Nom Complet",
+      "phone": "Numéro de Téléphone",
+      "city": "Ville",
+      "cityPlaceholder": "Sélectionnez votre ville",
+      "service": "Service d'Intérêt",
+      "servicePlaceholder": "Sélectionnez un service",
+      "details": "Détails du Projet",
+      "submit": "Envoyer la Demande"
+    }
+  },
+  "footer": {
+    "description": "Votre partenaire de confiance pour la sécurité et l'automatisation haut de gamme au Maroc. De l'étude à l'installation et la maintenance.",
+    "solutionsTitle": "Nos Solutions",
+    "companyTitle": "Entreprise",
+    "contactTitle": "Contactez-nous",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "rights": "Tous droits réservés."
+  },
+  "request": {
+    "title": "Demander un Devis",
+    "subtitle": "Parlez-nous de votre projet et nous vous proposerons une solution sur mesure et une estimation.",
+    "successTitle": "Demande envoyée avec succès !",
+    "successMessage": "Merci de nous avoir contactés. Nos experts examineront vos détails et vous contacteront sous peu.",
+    "submitAnother": "Soumettre une autre demande",
+    "form": {
+      "fullName": "Nom Complet *",
+      "company": "Nom de l'entreprise",
+      "email": "Adresse Email *",
+      "phone": "Numéro de Téléphone *",
+      "serviceType": "Type de Service *",
+      "serviceSelect": "Sélectionnez un service...",
+      "projectType": "Type de Projet *",
+      "projectSelect": "Sélectionnez le type...",
+      "budget": "Gamme de Budget",
+      "budgetSelect": "Sélectionnez le budget...",
+      "timeline": "Délai",
+      "timelineSelect": "Sélectionnez le délai...",
+      "description": "Description du Projet",
+      "descriptionPlaceholder": "Dites-nous en plus sur vos besoins...",
+      "submit": "Envoyer la demande",
+      "services": {
+        "garage": "Portes de Garage",
+        "gate": "Automatisation de Portail",
+        "barrier": "Barrières pour Véhicules",
+        "cctv": "Vidéosurveillance & Alarme",
+        "access": "Contrôle d'Accès",
+        "locks": "Serrures Intelligentes"
+      },
+      "projects": {
+        "residential": "Résidentiel (Villa)",
+        "commercial": "Commercial (Bureau/Magasin)",
+        "industrial": "Industriel"
+      },
+      "budgets": {
+        "under5k": "Moins de 5 000 MAD",
+        "5k_20k": "5 000 - 20 000 MAD",
+        "20k_50k": "20 000 - 50 000 MAD",
+        "over50k": "Plus de 50 000 MAD"
+      },
+      "timelines": {
+        "immediate": "Immédiat",
+        "1month": "Dans un délai d'un mois",
+        "3months": "1-3 mois",
+        "planning": "En simple planification"
+      }
+    }
+  }
+}
