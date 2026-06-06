@@ -26,18 +26,22 @@ export default function Home() {
     <div className="overflow-hidden">
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center bg-slate-50 dark:bg-slate-900 overflow-hidden transition-colors duration-300">
-        {/* Background Gradients */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-100 via-sky-50 to-slate-100 dark:from-slate-900 dark:via-sky-950 dark:to-slate-900 z-0 transition-colors duration-300"></div>
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=2070&auto=format&fit=crop')] opacity-10 dark:opacity-20 mix-blend-overlay bg-cover bg-center transition-opacity duration-300"></div>
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-20">
+        {/* Background Image */}
+        <div className="absolute inset-0 bg-[url('https://eccweb.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/02/26103849/The-Role-of-Automation-in-Cybersecurity-1.jpg')] bg-cover bg-center z-0"></div>
+
+        {/* Theme Overlays - Minimal overlay for maximum image visibility */}
+        <div className="absolute inset-0 bg-slate-50/20 dark:bg-slate-900/40 z-0 transition-colors duration-300"></div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-20 pb-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div 
+            <motion.div
               initial="hidden"
               animate="visible"
               variants={staggerContainer}
-              className="text-left"
+              className="text-left relative"
             >
+              {/* Soft glow behind text for excellent readability against dark/complex backgrounds */}
+              <div className="absolute -inset-x-10 -inset-y-16 bg-white/60 dark:bg-slate-900/50 blur-3xl rounded-full -z-10 pointer-events-none"></div>
               <motion.div variants={fadeIn} className="flex items-center gap-3 mb-6">
                 <span className="px-3 py-1 text-xs font-semibold tracking-wider text-sky-600 dark:text-sky-400 bg-sky-100 dark:bg-sky-400/10 rounded-full border border-sky-200 dark:border-sky-400/20 transition-colors duration-300">
                   {t('hero.badges.secure')}
@@ -79,7 +83,7 @@ export default function Home() {
       {/* Services Preview Section */}
       <section className="py-24 bg-white dark:bg-slate-950 transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
+          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -94,7 +98,7 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -102,32 +106,32 @@ export default function Home() {
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
             {/* Service Cards */}
-            <ServiceCard 
+            <ServiceCard
               icon={<ShieldCheck className="w-8 h-8 text-sky-500" />}
               title={t('services.items.garage.title')}
               desc={t('services.items.garage.desc')}
             />
-            <ServiceCard 
+            <ServiceCard
               icon={<Activity className="w-8 h-8 text-sky-500" />}
               title={t('services.items.gate.title')}
               desc={t('services.items.gate.desc')}
             />
-            <ServiceCard 
+            <ServiceCard
               icon={<Shield className="w-8 h-8 text-sky-500" />}
               title={t('services.items.barriers.title')}
               desc={t('services.items.barriers.desc')}
             />
-            <ServiceCard 
+            <ServiceCard
               icon={<Cctv className="w-8 h-8 text-sky-500" />}
               title={t('services.items.cctv.title')}
               desc={t('services.items.cctv.desc')}
             />
-            <ServiceCard 
+            <ServiceCard
               icon={<Key className="w-8 h-8 text-sky-500" />}
               title={t('services.items.access.title')}
               desc={t('services.items.access.desc')}
             />
-            <ServiceCard 
+            <ServiceCard
               icon={<Lock className="w-8 h-8 text-sky-500" />}
               title={t('services.items.locks.title')}
               desc={t('services.items.locks.desc')}
@@ -152,7 +156,7 @@ export default function Home() {
 
 function ServiceCard({ icon, title, desc }) {
   return (
-    <motion.div 
+    <motion.div
       variants={fadeIn}
       className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 group"
     >
