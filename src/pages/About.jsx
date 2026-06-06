@@ -14,9 +14,9 @@ export default function About() {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 pt-24 pb-24 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Header */}
-        <motion.div 
+        <motion.div
           initial="hidden"
           animate="visible"
           variants={fadeIn}
@@ -32,22 +32,52 @@ export default function About() {
 
         {/* Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
+            className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
-              <img 
-                src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2070" 
-                alt="Modern security monitoring and systems" 
-                className="w-full h-full object-cover transition-opacity duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 dark:from-slate-900/60 to-transparent transition-colors duration-300"></div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-4 pt-8">
+                <div className="rounded-2xl overflow-hidden aspect-square shadow-xl">
+                  <img
+                    src="https://aiagroup.ae/wp-content/uploads/2025/04/360_F_555108297_zND1EuFWwOFsrAHvAVnhx9Nn3UGRrgm0.jpg"
+                    alt="Security Camera"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="rounded-2xl overflow-hidden aspect-square shadow-xl">
+                  <img
+                    src="https://media.istockphoto.com/id/969328162/photo/electronic-door-control-device.jpg?s=612x612&w=0&k=20&c=xYU8k6YerMLSkifxn-L-vSS_498uLBXUnTYB8_jtrRE="
+                    alt="Access Control"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="rounded-2xl overflow-hidden aspect-square shadow-xl">
+                  <img
+                    src="https://static.wixstatic.com/media/5b40e1_bd44e05412fe421786cc3e355d8cb888~mv2.jpg/v1/fill/w_600,h_600,al_c,q_80,enc_avif,quality_auto/5b40e1_bd44e05412fe421786cc3e355d8cb888~mv2.jpg"
+                    alt="Security Systems"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="rounded-2xl overflow-hidden aspect-[4/5] shadow-xl">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Three_Surveillance_cameras.jpg/1280px-Three_Surveillance_cameras.jpg"
+                    alt="Automated Systems"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
             </div>
+
+            {/* Decorative element */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-sky-600/10 dark:bg-sky-400/10 rounded-full blur-3xl -z-10"></div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
