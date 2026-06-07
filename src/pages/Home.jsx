@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ShieldCheck, Activity, Key, Shield, Cctv, Lock } from 'lucide-react';
 
-import heroBackground from '../assets/background.jpeg';
+import heroBackground from '../assets/hero-bg-hd.png';
 import imgGarageDoor from '../assets/services/garage-door.png';
 import imgGateAutomation from '../assets/services/gate-automation.png';
 import imgVehicleBarriers from '../assets/services/vehicle-barriers.png';
