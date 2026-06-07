@@ -32,14 +32,14 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative flex items-center bg-slate-50 dark:bg-slate-900 overflow-hidden transition-colors duration-300">
+      <section className="relative flex items-center bg-slate-50 dark:bg-slate-900 overflow-hidden transition-colors duration-300 min-h-[80vh] xl:min-h-screen">
         {/* Background Image */}
-        <div className="absolute inset-0 bg-cover bg-center z-0" style={{ backgroundImage: `url(${heroBackground})` }}></div>
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0" style={{ backgroundImage: `url(${heroBackground})` }}></div>
 
         {/* Theme Overlays - Minimal overlay for maximum image visibility */}
-        <div className="absolute inset-0 bg-black/20 z-0"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/40 to-transparent z-0"></div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-16 md:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-16 md:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial="hidden"
