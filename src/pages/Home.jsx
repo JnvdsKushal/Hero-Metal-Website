@@ -4,6 +4,13 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ShieldCheck, Activity, Key, Shield, Cctv, Lock } from 'lucide-react';
 
+import heroBackground from '../assets/background.jpeg';
+import imgGarageDoor from '../assets/services/garage-door.png';
+import imgGateAutomation from '../assets/services/gate-automation.png';
+import imgVehicleBarriers from '../assets/services/vehicle-barriers.png';
+import imgCctv from '../assets/services/cctv.png';
+import imgAccessControl from '../assets/services/access-control.png';
+import imgSmartLocks from '../assets/services/smart-locks.png';
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
@@ -27,10 +34,10 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center bg-slate-50 dark:bg-slate-900 overflow-hidden transition-colors duration-300">
         {/* Background Image */}
-        <div className="absolute inset-0 bg-[url('https://eccweb.s3.ap-south-1.amazonaws.com/wp-content/uploads/2023/02/26103849/The-Role-of-Automation-in-Cybersecurity-1.jpg')] bg-cover bg-center z-0"></div>
+        <div className="absolute inset-0 bg-cover bg-center z-0" style={{ backgroundImage: `url(${heroBackground})` }}></div>
 
         {/* Theme Overlays - Minimal overlay for maximum image visibility */}
-        <div className="absolute inset-0 bg-slate-50/20 dark:bg-slate-900/40 z-0 transition-colors duration-300"></div>
+        <div className="absolute inset-0 bg-slate-50/70 dark:bg-slate-900/80 z-0 transition-colors duration-300"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-20 pb-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -108,31 +115,37 @@ export default function Home() {
             {/* Service Cards */}
             <ServiceCard
               icon={<ShieldCheck className="w-8 h-8 text-sky-500" />}
+              image={imgGarageDoor}
               title={t('services.items.garage.title')}
               desc={t('services.items.garage.desc')}
             />
             <ServiceCard
               icon={<Activity className="w-8 h-8 text-sky-500" />}
+              image={imgGateAutomation}
               title={t('services.items.gate.title')}
               desc={t('services.items.gate.desc')}
             />
             <ServiceCard
               icon={<Shield className="w-8 h-8 text-sky-500" />}
+              image={imgVehicleBarriers}
               title={t('services.items.barriers.title')}
               desc={t('services.items.barriers.desc')}
             />
             <ServiceCard
               icon={<Cctv className="w-8 h-8 text-sky-500" />}
+              image={imgCctv}
               title={t('services.items.cctv.title')}
               desc={t('services.items.cctv.desc')}
             />
             <ServiceCard
               icon={<Key className="w-8 h-8 text-sky-500" />}
+              image={imgAccessControl}
               title={t('services.items.access.title')}
               desc={t('services.items.access.desc')}
             />
             <ServiceCard
               icon={<Lock className="w-8 h-8 text-sky-500" />}
+              image={imgSmartLocks}
               title={t('services.items.locks.title')}
               desc={t('services.items.locks.desc')}
             />
@@ -154,14 +167,21 @@ export default function Home() {
   );
 }
 
-function ServiceCard({ icon, title, desc }) {
+function ServiceCard({ icon, image, title, desc }) {
   return (
     <motion.div
       variants={fadeIn}
-      className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 group"
+      className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl hover:shadow-xl transition-all duration-300 group flex flex-col"
     >
-      <div className="mb-6 p-4 bg-white dark:bg-slate-800 rounded-xl inline-block shadow-sm group-hover:scale-110 transition-transform duration-300 text-sky-600 dark:text-sky-500">
+      <div className="mb-6 p-4 bg-white dark:bg-slate-800 rounded-xl inline-block shadow-sm group-hover:scale-110 transition-transform duration-300 text-sky-600 dark:text-sky-500 self-start">
         {icon}
+      </div>
+      <div className="w-full h-48 sm:h-[200px] overflow-hidden rounded-xl mb-6">
+        <img 
+          src={image} 
+          alt={title} 
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+        />
       </div>
       <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3 transition-colors duration-300">{title}</h3>
       <p className="text-slate-600 dark:text-slate-400 leading-relaxed transition-colors duration-300">
