@@ -91,7 +91,7 @@ export default function About() {
               <StatCard icon={<Shield />} number="10+" label={t('about.stats.years')} />
               <StatCard icon={<Settings />} number="500+" label={t('about.stats.projects')} />
               <StatCard icon={<Users />} number="98%" label={t('about.stats.clients')} />
-              <StatCard icon={<PhoneCall />} number="24/7" label={t('about.stats.support')} />
+              <StatCard icon={<PhoneCall />} number={t('about.stats.supportTime')} label={t('about.stats.support')} />
             </div>
           </motion.div>
         </div>

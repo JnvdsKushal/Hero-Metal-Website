@@ -32,14 +32,14 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center bg-slate-50 dark:bg-slate-900 overflow-hidden transition-colors duration-300">
+      <section className="relative flex items-center bg-slate-50 dark:bg-slate-900 overflow-hidden transition-colors duration-300">
         {/* Background Image */}
         <div className="absolute inset-0 bg-cover bg-center z-0" style={{ backgroundImage: `url(${heroBackground})` }}></div>
 
         {/* Theme Overlays - Minimal overlay for maximum image visibility */}
-        <div className="absolute inset-0 bg-slate-50/70 dark:bg-slate-900/80 z-0 transition-colors duration-300"></div>
+        <div className="absolute inset-0 bg-black/20 z-0"></div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-20 pb-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-16 md:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial="hidden"
@@ -47,13 +47,11 @@ export default function Home() {
               variants={staggerContainer}
               className="text-left relative"
             >
-              {/* Soft glow behind text for excellent readability against dark/complex backgrounds */}
-              <div className="absolute -inset-x-10 -inset-y-16 bg-white/60 dark:bg-slate-900/50 blur-3xl rounded-full -z-10 pointer-events-none"></div>
               <motion.div variants={fadeIn} className="flex items-center gap-3 mb-6">
-                <span className="px-3 py-1 text-xs font-semibold tracking-wider text-sky-600 dark:text-sky-400 bg-sky-100 dark:bg-sky-400/10 rounded-full border border-sky-200 dark:border-sky-400/20 transition-colors duration-300">
+                <span className="px-3 py-1 text-xs font-semibold tracking-wider text-white bg-sky-600/80 rounded-full border border-sky-400/50 backdrop-blur-sm transition-colors duration-300" style={{ textShadow: '0 1px 2px rgba(0,0,0,0.5)' }}>
                   {t('hero.badges.secure')}
                 </span>
-                <span className="flex items-center gap-2 text-xs font-medium text-emerald-600 dark:text-emerald-400 transition-colors duration-300">
+                <span className="flex items-center gap-2 text-xs font-medium text-emerald-400 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] transition-colors duration-300">
                   <span className="relative flex h-2 w-2">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
@@ -62,14 +60,14 @@ export default function Home() {
                 </span>
               </motion.div>
 
-              <motion.h1 variants={fadeIn} className="text-5xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6 leading-tight transition-colors duration-300">
+              <motion.h1 variants={fadeIn} className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
                 {t('hero.title')} <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-cyan-500 dark:from-sky-400 dark:to-cyan-300">
+                <span className="text-sky-400">
                   {t('hero.subtitle')}
                 </span>
               </motion.h1>
 
-              <motion.p variants={fadeIn} className="text-lg text-slate-600 dark:text-slate-300 mb-8 max-w-xl leading-relaxed transition-colors duration-300">
+              <motion.p variants={fadeIn} className="text-lg md:text-xl font-medium text-white mb-8 max-w-xl leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
                 {t('hero.description')}
               </motion.p>
 

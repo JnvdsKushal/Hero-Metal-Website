@@ -78,10 +78,10 @@ export default function Services() {
                   </p>
                   <ul className="space-y-2 mb-6">
                     <li className="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-500" /> Premium Quality
+                      <CheckCircle2 className="w-4 h-4 text-emerald-500" /> {t('services.features.premium')}
                     </li>
                     <li className="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-500" /> Professional Installation
+                      <CheckCircle2 className="w-4 h-4 text-emerald-500" /> {t('services.features.professional')}
                     </li>
                   </ul>
                   <Link to="/quote" className="mt-auto text-sky-600 dark:text-sky-400 font-medium hover:text-sky-700 transition-colors flex items-center gap-1 text-sm group/link">

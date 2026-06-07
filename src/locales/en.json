@@ -48,7 +48,11 @@
         "desc": "High-security biometric smart locks for villa entrance doors and corporate offices."
       }
     },
-    "quoteBtn": "Request a free quote"
+    "quoteBtn": "Request a free quote",
+    "features": {
+      "premium": "Premium Quality",
+      "professional": "Professional Installation"
+    }
   },
   "about": {
     "title": "Industrial Excellence in Morocco",
@@ -58,12 +62,20 @@
       "years": "Years of Experience",
       "projects": "Completed Projects",
       "clients": "Satisfied Clients",
+      "supportTime": "24/7",
       "support": "Support & Maintenance"
     }
   },
   "contact": {
     "title": "Contact Our Experts",
     "subtitle": "Have a project in mind? Our advisors are ready to study your needs anywhere in Morocco.",
+    "infoTitle": "Contact Information",
+    "office": "Office",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "hoursTitle": "Business Hours",
+    "hoursWeek": "Mon - Fri: 8:30 AM - 6:30 PM",
+    "hoursSat": "Sat: 9:00 AM - 1:00 PM",
     "info": {
       "city": "Casablanca, Maroc",
       "address": "Angle Boulevard Ghandi & Route d'El Jadida, Casablanca, Morocco",

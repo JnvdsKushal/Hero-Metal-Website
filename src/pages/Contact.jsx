@@ -38,14 +38,14 @@ export default function Contact() {
             className="lg:col-span-1 space-y-6"
           >
             <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm transition-colors duration-300 hover:shadow-md">
-              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-6 transition-colors duration-300">Contact Information</h3>
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-6 transition-colors duration-300">{t('contact.infoTitle')}</h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-sky-50 dark:bg-sky-900/20 text-sky-600 dark:text-sky-400 rounded-lg shrink-0 transition-colors duration-300">
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-900 dark:text-white mb-1">Office</h4>
+                    <h4 className="font-semibold text-slate-900 dark:text-white mb-1">{t('contact.office')}</h4>
                     <p className="text-slate-600 dark:text-slate-400 text-sm">{t('contact.info.address')}</p>
                   </div>
                 </div>
@@ -55,7 +55,7 @@ export default function Contact() {
                     <Phone className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-900 dark:text-white mb-1">Phone</h4>
+                    <h4 className="font-semibold text-slate-900 dark:text-white mb-1">{t('contact.phoneLabel')}</h4>
                     <p className="text-slate-600 dark:text-slate-400 text-sm" dir="ltr">{t('contact.info.phone')}</p>
                   </div>
                 </div>
@@ -65,7 +65,7 @@ export default function Contact() {
                     <Mail className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-900 dark:text-white mb-1">Email</h4>
+                    <h4 className="font-semibold text-slate-900 dark:text-white mb-1">{t('contact.emailLabel')}</h4>
                     <p className="text-slate-600 dark:text-slate-400 text-sm">{t('contact.info.email')}</p>
                   </div>
                 </div>
@@ -75,9 +75,9 @@ export default function Contact() {
                     <Clock className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-slate-900 dark:text-white mb-1">Business Hours</h4>
-                    <p className="text-slate-600 dark:text-slate-400 text-sm">Mon - Fri: 8:30 AM - 6:30 PM</p>
-                    <p className="text-slate-600 dark:text-slate-400 text-sm">Sat: 9:00 AM - 1:00 PM</p>
+                    <h4 className="font-semibold text-slate-900 dark:text-white mb-1">{t('contact.hoursTitle')}</h4>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm">{t('contact.hoursWeek')}</p>
+                    <p className="text-slate-600 dark:text-slate-400 text-sm">{t('contact.hoursSat')}</p>
                   </div>
                 </div>
               </div>

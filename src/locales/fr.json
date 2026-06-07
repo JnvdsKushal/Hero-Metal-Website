@@ -48,7 +48,11 @@
         "desc": "Serrures intelligentes biométriques haute sécurité pour portes d'entrée de villas et bureaux d'entreprise."
       }
     },
-    "quoteBtn": "Demander un devis gratuit"
+    "quoteBtn": "Demander un devis gratuit",
+    "features": {
+      "premium": "Qualité Premium",
+      "professional": "Installation Professionnelle"
+    }
   },
   "about": {
     "title": "L'Excellence Industrielle au Maroc",
@@ -58,12 +62,20 @@
       "years": "Années d'Expérience",
       "projects": "Projets Réalisés",
       "clients": "Clients Satisfaits",
-      "support": "Support & Maintenance"
+      "supportTime": "24h/24 7j/7",
+      "support": "Assistance et Maintenance"
     }
   },
   "contact": {
     "title": "Contactez Nos Experts",
     "subtitle": "Vous avez un projet en tête ? Nos conseillers sont prêts à étudier vos besoins partout au Maroc.",
+    "infoTitle": "Coordonnées",
+    "office": "Bureau",
+    "phoneLabel": "Téléphone",
+    "emailLabel": "Email",
+    "hoursTitle": "Heures d'Ouverture",
+    "hoursWeek": "Lun - Ven : 8h30 - 18h30",
+    "hoursSat": "Sam : 9h00 - 13h00",
     "info": {
       "city": "Casablanca, Maroc",
       "address": "Angle Boulevard Ghandi & Route d'El Jadida, Casablanca, Maroc",
